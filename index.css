@@ -6,13 +6,16 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  box-sizing: border-box;
 }
 
 .container {
   background: white;
   padding: 20px;
   border-radius: 8px;
-  width: 300px;
+  width: 100%;
+  max-width: 400px; 
+  box-sizing: border-box;
 }
 
 h1 {
@@ -20,12 +23,13 @@ h1 {
   color: #333;
 }
 
-input[type="text"] {
-
+input[type="text"], 
+input[type="datetime-local"] {
   padding: 10px;
-  margin-right: 10px;
   border: 2px solid #ccc;
   border-radius: 8px;
+  width: calc(100% - 22px); 
+  margin-bottom: 10px;
 }
 
 button {
@@ -34,6 +38,9 @@ button {
   color: white;
   border: none;
   border-radius: 6px;
+  margin-right: 5px;
+  width: 100%; 
+  box-sizing: border-box;
 }
 
 button:hover {
@@ -43,6 +50,7 @@ button:hover {
 ul {
   padding: 0;
   margin: 0;
+  list-style-type: none; 
 }
 
 li {
@@ -51,25 +59,41 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; 
 }
 
 li.completed {
- 
   color: #aaaaaa;
 }
 
 button.remove {
   background-color: #dc3545;
 }
-.remove:hover{
+
+button.remove:hover {
   background-color: #a52d3b;
 }
 
-button.edit{
-  background-color:rgb(10, 144, 120) ;
+button.edit {
+  background-color: rgb(10, 144, 120);
 }
-.edit:hover{
+
+button.edit:hover {
   background-color: rgb(6, 93, 77);
+}
+
+
+@media (min-width: 600px) {
+  button {
+    width: auto; 
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
 }
 
 
