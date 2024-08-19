@@ -81,6 +81,10 @@ button.edit {
 button.edit:hover {
   background-color: rgb(6, 93, 77);
 }
+.timestamp {
+  color: gray;
+  margin-left: 10px;
+}
 
 
 @media (min-width: 600px) {
