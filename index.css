@@ -10,6 +10,7 @@ body {
 }
 .email{
   display: flex;
+  justify-content: center;
 }
 
 .container {
