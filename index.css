@@ -8,6 +8,9 @@ body {
   height: 100vh;
   box-sizing: border-box;
 }
+.email{
+  display: flex;
+}
 
 .container {
   background: white;
