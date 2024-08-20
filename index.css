@@ -14,17 +14,17 @@ body {
   padding: 20px;
   border-radius: 8px;
   width: 100%;
-  max-width: 400px; 
+  max-width: 550px; 
   box-sizing: border-box;
 }
 
 h1 {
   text-align: center;
   color: #333;
+  margin-bottom: 20px;
 }
 
-input[type="text"], 
-input[type="datetime-local"] {
+input[type="text"] {
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 8px;
@@ -38,7 +38,7 @@ button {
   color: white;
   border: none;
   border-radius: 6px;
-  margin-right: 5px;
+  margin-top: 5px;
   width: 100%; 
   box-sizing: border-box;
 }
@@ -50,12 +50,11 @@ button:hover {
 ul {
   padding: 0;
   margin: 0;
-  list-style-type: none; 
 }
 
 li {
   padding: 10px;
-  border-bottom: 5px solid #ddd;
+  border-bottom: 1px solid #ddd;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,6 +63,7 @@ li {
 
 li.completed {
   color: #aaaaaa;
+  text-decoration: line-through;
 }
 
 button.remove {
@@ -81,6 +81,7 @@ button.edit {
 button.edit:hover {
   background-color: rgb(6, 93, 77);
 }
+
 .timestamp {
   color: gray;
   margin-left: 10px;
@@ -90,6 +91,7 @@ button.edit:hover {
 @media (min-width: 600px) {
   button {
     width: auto; 
+    margin-top: 5px;
   }
 }
 
@@ -98,6 +100,10 @@ button.edit:hover {
     padding: 10px;
   }
 
+  button {
+    width: 100%;
+  }
 }
+
 
 
