@@ -1,6 +1,6 @@
 const email = document.getElementsByClassName("email")[0]
 const email1 = localStorage.getItem("email")
-email.innerHTML = "" + email1
+email.innerHTML = "Hello: " + email1
 function addTask() {
     const date = new Date();
     const formatter = new Intl.DateTimeFormat("en-GB", {
