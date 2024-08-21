@@ -1,0 +1,27 @@
+.body{
+    background-color: blue;
+  
+  
+}
+.inpt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+}
+#submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 15px;
+}
+#button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 15px;
+}
