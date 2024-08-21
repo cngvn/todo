@@ -25,6 +25,7 @@ function email_checker(){
         console.log('Email is valid')
         
     }else {
+        
         alert('Email doesnt have @')
     }
 }

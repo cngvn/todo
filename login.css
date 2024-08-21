@@ -1,27 +1,70 @@
-.body{
-    background-color: blue;
-  
-  
+ 
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298); 
+    margin: 0;
+    font-family: Arial, sans-serif; 
+    color: #fff;
 }
-.inpt{
+
+.inpt {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 500px;
+    height: 100vh;
+    padding: 20px; 
+    box-sizing: border-box; 
 }
-#submit{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 15px;
+
+
+.input-group {
+    margin-bottom: 15px; 
 }
-#button{
+
+.input-field {
+    width: 100%;
+    max-width: 400px; 
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #007BFF; 
+    outline: none;
+}
+
+
+button {
+    background-color: #007BFF; 
+    color: #fff;
+    border: none;
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+button:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+}
+
+
+.button-group {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 15px;
+    gap: 10px; 
+}
+
+
+#submit, #button {
+    width: auto; 
+    height: auto; 
+    margin: 0; 
 }

@@ -8,23 +8,35 @@
   </head>
   <body class="body">
     <div class="inpt">
-      <div>
-        <input id="Email" type="email" placeholder="Email" />
-      </div>
-      <div>
-        <input id="Number" placeholder="Number" minlength="8" />
-      </div>
-      <div>
+      <div class="input-group">
         <input
-          id="password"
-          type="password"
-          placeholder="password"
+          class="input-field"
+          id="Email"
+          type="email"
+          placeholder="Email"
+        />
+      </div>
+      <div class="input-group">
+        <input
+          class="input-field"
+          id="Number"
+          type="text"
+          placeholder="Number"
           minlength="8"
         />
-        <button id="button"></button>
       </div>
-      <div>
-        <button id="submit"></button>
+      <div class="input-group">
+        <input
+          class="input-field"
+          id="password"
+          type="password"
+          placeholder="Password"
+          minlength="8"
+        />
+      </div>
+      <div class="button-group">
+        <button id="button">Button</button>
+        <button id="submit">Submit</button>
       </div>
     </div>
     <script src="./login.js"></script>
