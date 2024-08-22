@@ -1,6 +1,13 @@
-const email = document.getElementsByClassName("email")[0]
-const email1 = localStorage.getItem("email")
-email.innerHTML = "Hello: " + email1
+
+const emailElement = document.getElementsByClassName("email")[0];
+const numberElement = document.getElementsByClassName("number")[0];
+
+const email = localStorage.getItem("email");
+const number = localStorage.getItem("number");
+
+emailElement.innerHTML = "Email: " + (email);
+numberElement.innerHTML = "Number: " + (number);
+
 function addTask() {
     const date = new Date();
     const formatter = new Intl.DateTimeFormat("en-GB", {
@@ -34,14 +41,17 @@ function addTask() {
     taskList.appendChild(li);
     taskInput.value = '';
 }
+
 function removeTask(button) {
     const taskList = document.getElementById('taskList');
     taskList.removeChild(button.parentElement);
 }
+
 function comp(button) {
     const li = button.parentElement;
     li.classList.toggle('completed');
 }
+
 function edit(button) {
     const li = button.parentElement;
     const span = li.querySelector('span');
@@ -53,6 +63,7 @@ function edit(button) {
     }
     span.textContent = newTaskText;
 }
+
 
 
 

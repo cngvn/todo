@@ -12,6 +12,7 @@ button.addEventListener('click', function (){
     email_checker()
     number_checker()
     pass_checker()
+    localStorage.setItem("number",number.value)
     localStorage.setItem("email", email.value)
     window.location.href = "todo.html"
 })
